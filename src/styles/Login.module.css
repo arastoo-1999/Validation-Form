@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.loginForm {
+    width: 20em;
+    height: 20em;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 10px 4px rgb(194, 194, 194);
+}
+
+.loginForm h1 {
+    font:bold 2rem cursive;
+    color: rgb(47, 47, 202);
+    margin: 20px 0;
+}
+
+.Fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.Fields input {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 0 0 3px 0;
+    background-color: rgb(235, 233, 233);
+}
+
+.Label {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(128, 128, 128);
+}
+
+.errorsText {
+    color: rgb(241, 60, 28);
+    font:bold 11px "Arial";
+}
+
+.Buttons {
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Buttons a {
+    text-decoration: none;
+    color: rgb(47, 47, 202);
+    font:16px cursive;
+}
+
+.loginButton {
+    width: 50px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(45, 184, 142);
+}
+
+.loginButton:hover {
+    background-color: rgb(57, 160, 129);
+}

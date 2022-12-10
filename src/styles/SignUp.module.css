@@ -1,0 +1,105 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.signUpFrom {
+    width: 25em;
+    height: 32em;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 4px rgb(194, 194, 194);
+}
+
+.signUpFrom h1 {
+    font:bold 2rem cursive;
+    color: rgb(47, 47, 202);
+    margin: 20px 0;
+}
+
+.Fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.Fields input {
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 0 0 3px 0;
+    background-color: rgb(235, 233, 233);
+}
+
+.Label {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(128, 128, 128);
+}
+
+.ErrorsText {
+    color: rgb(241, 60, 28);
+    font:bold 11px "Arial";
+}
+
+.Privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Privacy input {
+    margin: 5px;
+    accent-color: rgb(45, 184, 142);
+    width: 15px;
+    height: 15px;
+}
+
+.IsAccepted label {
+    margin: 5px;
+}
+
+.PrivacyError {
+    font-size: 14px;
+
+}
+
+.Buttons {
+    width: 200px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Buttons a {
+    text-decoration: none;
+    color: rgb(47, 47, 202);
+    font:16px cursive;
+}
+
+.Buttons button {
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(45, 184, 142);
+}
+
+.Buttons button:hover {
+    background-color: rgb(57, 160, 129);
+}
