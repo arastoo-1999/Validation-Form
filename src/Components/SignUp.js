@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Notify from '../Toast.js';
 
 // Styles
 import styles from "../styles/SignUp.module.css";
@@ -38,9 +42,27 @@ const SignUp = () => {
         console.log(error);
     }, [data])
 
+    const submitHandler = event => {
+        event.preventDefault();
+        if(!Object.keys(error).length) {
+            console.log(data);
+        Notify("You Signed in successfully.", "success");
+        } 
+        else {
+        Notify("Invalid data!", "error");
+            setTouched({
+                Name: true,
+                Email: true,
+                Password: true,
+                ConfirmPassword: true,
+                IsAccepted: true
+            });
+        }
+    }
+
     return (
         <div className={styles.Container}>
-            <form className={styles.signUpFrom}>
+            <form onSubmit={submitHandler} className={styles.signUpFrom}>
                 <h1>SignUp</h1>
                 <div className={styles.Fields}>
                     <label className={styles.Label}>Name</label>
@@ -73,6 +95,7 @@ const SignUp = () => {
                     </Link>
                     <button>SignUp</button>
                 </div>
+                <ToastContainer />
             </form>
         </div>
     );
